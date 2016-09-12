@@ -28,7 +28,6 @@ namespace Random_Numbers {
         }
 
         private void lblFlavor_Click(object sender, EventArgs e) { }
-
         private void lbxFlavors_SelectedIndexChanged(object sender, EventArgs e) {
             lblFlavor.Text = lbxFlavors.SelectedItem.ToString();
         }
