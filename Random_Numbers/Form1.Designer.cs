@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.lblFlavors = new System.Windows.Forms.Label();
             this.lbxFlavors = new System.Windows.Forms.ListBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblFlavor = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblFlavors
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(8, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ice Cream Flavors:";
+            this.lblFlavors.AutoSize = true;
+            this.lblFlavors.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFlavors.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.lblFlavors.Location = new System.Drawing.Point(8, 9);
+            this.lblFlavors.Name = "lblFlavors";
+            this.lblFlavors.Size = new System.Drawing.Size(187, 21);
+            this.lblFlavors.TabIndex = 0;
+            this.lblFlavors.Text = "Ice Cream Flavors:";
             // 
             // lbxFlavors
             // 
@@ -68,13 +69,12 @@
             // 
             // lblFlavor
             // 
-            this.lblFlavor.AutoSize = true;
             this.lblFlavor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblFlavor.Font = new System.Drawing.Font("Monotype Corsiva", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFlavor.ForeColor = System.Drawing.Color.Fuchsia;
             this.lblFlavor.Location = new System.Drawing.Point(12, 187);
             this.lblFlavor.Name = "lblFlavor";
-            this.lblFlavor.Size = new System.Drawing.Size(64, 24);
+            this.lblFlavor.Size = new System.Drawing.Size(260, 24);
             this.lblFlavor.TabIndex = 3;
             this.lblFlavor.Text = "Flavor";
             this.lblFlavor.Click += new System.EventHandler(this.lblFlavor_Click);
@@ -84,12 +84,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 294);
+            this.ControlBox = false;
             this.Controls.Add(this.lblFlavor);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lbxFlavors);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblFlavors);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Ice Cream";
+            this.Text = "Jimmy John\'s Ice Cream";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -98,7 +101,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblFlavors;
         private System.Windows.Forms.ListBox lbxFlavors;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblFlavor;
